@@ -1,6 +1,6 @@
 
 
-public class LeapYearPrinter {
+public class LeapYearPrinter {                                      // need to refactor
 
     static int MIN = 1800;     // define minimal year range value
     static int MAX = 2400;     // define maximum year range value
