@@ -5,7 +5,10 @@ public class LeapChecker {
     public LeapChecker() {
     }
 
-    public boolean isLeapYear(int year){
+    public boolean isLeapYear(int year) {
+        if (year<= 0)
+            throw new TooNegativeYear();
+
         boolean answer = false;
 
         if((year % 4 == 0) && (year%100 != 0))
@@ -24,3 +27,4 @@ public class LeapChecker {
     }
 
 }
+
