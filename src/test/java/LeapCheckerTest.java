@@ -38,6 +38,15 @@ public class LeapCheckerTest {
         assertTrue(check.isLeapYear(800));
 
     }
+
+    @Test
+    public void testDividesBy4000ResultsIn_True() {
+
+        assertTrue(check.isLeapYear(4000));
+        assertTrue(check.isLeapYear(8000));
+
+    }
+
     @Test
     public void testNotDividesByFourResultsIn_False() {
 
